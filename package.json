@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.25",
+    "@types/nprogress": "^0.2.3",
     "@vitejs/plugin-vue": "^5.0.1",
     "electron": "^28.1.0",
     "electron-builder": "^24.9.1",
@@ -39,9 +40,17 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.6.7",
+    "cropperjs": "^1.6.1",
     "element": "^0.1.4",
     "element-plus": "^2.6.0",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.1.7",
     "plus": "^0.1.0",
-    "vue-router": "^4.3.0"
+    "vue-cropperjs": "^5.0.0",
+    "vue-router": "^4.3.0",
+    "webrtc": "^1.14.1"
   }
 }

@@ -4,19 +4,23 @@
       <el-header class="Header">
         <Header></Header>
       </el-header>
+
       <el-container>
         <el-aside  class="Aside"><Aside></Aside></el-aside>
+
         <el-main class="Main"><Main></Main></el-main>
       </el-container>
     </el-container>
+
+
   </div>
 </template>
 
 
 <script setup>
-import Header from './Header/index.vue'
-import Aside from './Aside/index.vue'
-import Main from './Main/index.vue'
+import Header from '@/components/Header/index.vue'
+import Aside from '@/components/Aside/index.vue'
+import Main from '@/components/Main/index.vue'
 </script>
 
 <style scoped>
@@ -33,14 +37,14 @@ import Main from './Main/index.vue'
   margin: 0 0 10px 0;
 }
 .Main{
-  height:980px;
-  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
   background-color: pink;
 }
 .Aside{
   width:200px;
   margin: 0 10px 0 0;
-  background-color: white;
-  height:980px;
+  height:100vh;
 }
 </style>

@@ -1,15 +1,19 @@
 <template>
   <div > 
-      <el-button class="MoiButton"></el-button>
-
+      <el-button class="MoiButton">{{ msg }}</el-button>
   </div>
 </template>
 <script setup lang="ts">
-
+import { defineProps } from 'vue';
+const propos = defineProps({
+  msg:{
+    type:String
+  }
+  })
 </script>
 <style scoped>
 .MoiButton{
-  width: 50px;
+  width: 100px;
   height: 50px;
   color: white;
   background-color: pink;
@@ -18,7 +22,6 @@
   margin: 10px;
 background-image: url('./add.svg');
 background-size: contain;
-background-position: center;
 background-repeat: no-repeat;
 }
 
