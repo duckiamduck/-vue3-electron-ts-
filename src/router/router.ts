@@ -12,6 +12,15 @@ const routes:RouteRecordRaw[]=[
     component:Menu,
     children:[
       {
+        path: '/dashboard',
+        name: 'dashboard',
+        meta: {
+            title: '系统首页',
+            permiss: '1',
+        },
+        component: () => import('@/view/dashborad/index.vue'),
+    },
+      {
           path:'user',
           name:'user',
           meta:{

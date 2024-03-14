@@ -19,12 +19,10 @@ const tags = useTagsStore();
 <style scoped>
 
 .box1{
-width:90%;
+width:100%;
 height: 100vh;
 background-color: white;
 border-radius: 15px;
-border:10px solid pink;
 box-sizing: border-box;
-margin-left: 5%;
 }
 </style>

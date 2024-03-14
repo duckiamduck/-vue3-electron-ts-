@@ -1,24 +1,23 @@
 <template>
-  <el-row class="tac">
-    <el-col :span="55" >
+  <el-row>
+    <el-col >
       <el-menu
         default-active="2"
-        class="el-menu-vertical-demo Aside  "
+        class="el-menu-vertical-demo Aside "
         @open="handleOpen"
         @close="handleClose"
-   
       >
-        <el-sub-menu index="1">
+        <el-sub-menu index="1" >
           <template #title >
-            <el-icon ><location /></el-icon>
+            <el-icon><location /></el-icon>
             <span >PS网站</span>
           </template>
-          <el-menu-item-group title="工具">
-            <el-menu-item index="1-1" @click="Gops">PS</el-menu-item>
+          <el-menu-item-group>
+            <el-menu-item index="1-1" @click="Godash">dashboard</el-menu-item>
             <el-menu-item index="1-2" @click="Gops2">国内PS</el-menu-item>
           </el-menu-item-group>
-          <el-menu-item-group title="Group Two">
-            <el-menu-item index="1-3" @click="Gogimini">谷歌Ai</el-menu-item>
+          <el-menu-item-group>
+            <el-menu-item index="1-3"  @click="Gops">国外PS</el-menu-item>
           </el-menu-item-group>
           <el-sub-menu index="1-4">
             <template #title>item four</template>
@@ -58,7 +57,9 @@ const handleOpen = (key: string, keyPath: string[]) => {
 const handleClose = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
 }
-
+const Godash = ()=>{
+  router.push('/dashboard')
+}
 const Gops = ()=>{
 router.push('/ps')
 }
@@ -71,13 +72,11 @@ const Gogimini =()=>{
 </script>
 
 <style scoped>
-.col:hover{
-border-radius: 15px;
-background-color: red;
-}
 .Aside{
- border: 5px solid pink;
- border-radius: 20px !important;
+ border-radius: 15px !important;
+ width: auto;
+ 
+ height: 100vh;
 }
 
 </style>

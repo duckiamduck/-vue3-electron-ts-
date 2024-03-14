@@ -4,14 +4,11 @@
       <el-header class="Header">
         <Header></Header>
       </el-header>
-
       <el-container>
         <el-aside  class="Aside"><Aside></Aside></el-aside>
-
         <el-main class="Main"><Main></Main></el-main>
       </el-container>
     </el-container>
-
 
   </div>
 </template>
@@ -29,22 +26,22 @@ import Main from '@/components/Main/index.vue'
   margin: 0;
 }
 .Header {
-  height: 100px;
+  height: 10vh;
   border-radius: 20px;
-  box-sizing: border-box;
   background-color: white !important;
-  border: 10px solid pink;
   margin: 0 0 10px 0;
+  box-shadow:0 0 5px pink;
 }
-.Main{
-  width: 100%;
-  height: 100%;
+.Main{ 
+  flex:1;
   border-radius: 15px;
-  background-color: pink;
+  box-shadow:0 0 5px pink;
 }
 .Aside{
-  width:200px;
-  margin: 0 10px 0 0;
+  width: 15vw;
   height:100vh;
+  border-radius: 15px;
+  margin-right: 10px;
+  box-shadow:0 0 5px pink;
 }
 </style>
