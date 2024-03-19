@@ -25,16 +25,20 @@
           </el-sub-menu>
         </el-sub-menu>
         <el-menu-item index="2">
-          <el-icon><icon-menu /></el-icon>
-          <span>Navigator Two</span>
-        </el-menu-item>
-        <el-menu-item index="3" disabled>
-          <el-icon><document /></el-icon>
-          <span>Navigator Three</span>
-        </el-menu-item>
-        <el-menu-item index="4">
           <el-icon><setting /></el-icon>
-          <span>Navigator Four</span>
+          <span>友情连接</span>
+        </el-menu-item>
+        <el-menu-item index="3" @click="goselect">
+          <el-icon><icon-menu /></el-icon>
+          <span>接口文档</span>
+        </el-menu-item>
+        <el-menu-item index="4" @click="GobackgroundPic" >
+          <el-icon><document /></el-icon>
+          <span>壁纸欣赏</span>
+        </el-menu-item>
+        <el-menu-item index="5">
+          <el-icon><setting /></el-icon>
+          <span>友情连接</span>
         </el-menu-item>
       </el-menu>
     </el-col>
@@ -51,11 +55,15 @@ import {
   Location,
   Setting,
 } from '@element-plus/icons-vue'
+
 const handleOpen = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
 }
 const handleClose = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
+}
+const goselect = ()=>{
+  router.push('/apifox')
 }
 const Godash = ()=>{
   router.push('/dashboard')
@@ -66,8 +74,8 @@ router.push('/ps')
 const Gops2 = ()=>{
   router.push('/ps2')
 }
-const Gogimini =()=>{
-  router.push('/gimini')
+const GobackgroundPic = ()=>{
+  router.push('/backgroundpic')
 }
 </script>
 

@@ -21,6 +21,7 @@ function withPrototype(obj: Record<string, any>) {
   }
   return obj
 }
+//2024/3/18
 
 // --------- Preload scripts loading ---------
 function domReady(condition: DocumentReadyState[] = ['complete', 'interactive']) {

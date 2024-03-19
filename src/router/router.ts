@@ -57,9 +57,27 @@ const routes:RouteRecordRaw[]=[
           title:'gimini'
         },
         component:()=>import('@/view/Gimini/index.vue')
+      },
+      {
+        path:'/apifox',
+        name:'apifox',
+        meta:{
+          title:'apifox'
+        },
+        component:()=>import('@/view/api/index.vue')
+      },
+      {
+        path:'/backgroundpic',
+        name:'backgroundpic',
+        meta:{
+          title:'background'
+        },
+        component:()=>import('@/view/BackgroundPic/index.vue')
       }
     ]
   }
+  ,
+
  ,
   {
     path:'/login',

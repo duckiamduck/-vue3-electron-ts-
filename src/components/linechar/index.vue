@@ -2,7 +2,7 @@
   <div
     ref="myChart"
     id="myChart"
- class="size"
+    style="width: 25vw;height:30vh;"
   ></div>
 </template>
  

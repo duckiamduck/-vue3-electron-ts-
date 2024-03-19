@@ -97,7 +97,7 @@ const tags = useTagsStore();
 tags.clearTags();
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 .login-wrap {
   display: flex;
@@ -122,7 +122,7 @@ tags.clearTags();
   width: 350px;
 
   border-radius: 15px;
-  background:pink;
+  background:$bg-color;
 }
 .ms-content {
   padding: 10px 30px 30px;

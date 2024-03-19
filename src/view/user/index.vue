@@ -117,11 +117,11 @@ const saveAvatar = () => {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .CardPosition{
 	margin-top: 30%;
 
-	border: 5px solid pink;
+	border: 5px solid $bg-color;
 	border-radius: 15px;
   box-sizing: border-box;
 }
@@ -135,7 +135,7 @@ const saveAvatar = () => {
 	width: 100px;
 	height: 100px;
 	background: #f8f8f8;
-	border: 5px solid pink;
+	border: 5px solid $bg-color;
 	border-radius: 50px;
 	overflow: hidden;
 }

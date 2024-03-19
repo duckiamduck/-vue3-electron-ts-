@@ -48,6 +48,10 @@ async function createWindow() {
   win = new BrowserWindow({
     title: 'Main window',
     icon: join(process.env.VITE_PUBLIC, 'favicon.ico'),
+    // frame:false,
+    width:1200,
+    height:600
+    ,
     webPreferences: {
       preload,
       // Warning: Enable nodeIntegration and disable contextIsolation is not secure in production
@@ -112,6 +116,9 @@ ipcMain.handle('open-win', (_, arg) => {
       nodeIntegration: true,
       contextIsolation: false,
     },
+  })
+  ipcMain.on('window-close',function (){
+    win.close();
   })
 
   if (process.env.VITE_DEV_SERVER_URL) {

@@ -11,12 +11,12 @@ const propos = defineProps({
   }
   })
 </script>
-<style scoped>
+<style scoped lang="scss">
 .MoiButton{
   width: 100px;
   height: 50px;
   color: white;
-  background-color: pink;
+  background-color: $bg-color;
   border: none;
   border-radius: 15px;
   margin: 10px;
@@ -26,11 +26,11 @@ background-repeat: no-repeat;
 }
 
 .MoiButton:hover{
-background-color: pink;
+background-color: $bg-color;
 width: 100px;
 
 }
 .MoiButton:active{
-  box-shadow: pink 0 0 5px 5px;
+  box-shadow: $bg-color 0 0 5px 5px;
 }
 </style>

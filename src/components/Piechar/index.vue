@@ -2,7 +2,7 @@
   <div
     ref="myChart"
     id="myChart"
-    class="size"
+    style="width: 25vw;height:50vh;"
   ></div>
 </template>
  
@@ -15,7 +15,6 @@ export default {
  
     const option = {
       title: {
-    text: 'Referer of a Website',
     subtext: 'Fake Data',
     left: 'center'
   },

@@ -2,7 +2,7 @@
   <div
     ref="myChart"
     id="myChart"
- class="size"
+    style="width: 20vw;height:30vh;"
   ></div>
 </template>
  
@@ -44,6 +44,7 @@ export default {
       ]
     }
   ]
+  ,
     }
     // 设置实例参数
     myChart.setOption(option);
@@ -52,9 +53,6 @@ export default {
 </script>
 
 <style scoped>
-.size{
-  width:100%;
-  height:100%;
-}
+
 
 </style>

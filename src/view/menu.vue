@@ -20,7 +20,7 @@ import Aside from '@/components/Aside/index.vue'
 import Main from '@/components/Main/index.vue'
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 *{
   padding: 0;
   margin: 0;
@@ -30,18 +30,18 @@ import Main from '@/components/Main/index.vue'
   border-radius: 20px;
   background-color: white !important;
   margin: 0 0 10px 0;
-  box-shadow:0 0 5px pink;
+  box-shadow:0 0 5px $bg-color;
 }
 .Main{ 
   flex:1;
   border-radius: 15px;
-  box-shadow:0 0 5px pink;
+  box-shadow:0 0 5px $bg-color;
 }
 .Aside{
   width: 15vw;
   height:100vh;
   border-radius: 15px;
   margin-right: 10px;
-  box-shadow:0 0 5px pink;
+  box-shadow:0 0 5px $bg-color;
 }
 </style>
